@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background: #111344;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.app{
+    background: #DAE0F2;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+.app h1{
+    font-size: 25px;
+    color: #52154E;
+    font-weight: 600;
+    border-bottom: 1px solid #111344;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color:#111344;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.btn{
+    background: #607b3b;
+    color: #EFE9E7;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #EFE9E7;
+    padding: 15px;
+    margin: 10px 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.btn:hover{
+    background: #52154E;
+    color: #EFE9E7;
+}
+#next-btn{
+    background: #72B01D;
+    color: #EFE9E7;
+    font-weight: 750;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    
+    transition: all 0.4s;
+}
+#next-btn:hover{
+    background: #52154E;
+    color: #F9CFF2;
+}
