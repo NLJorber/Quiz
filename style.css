@@ -6,6 +6,10 @@ box-sizing: border-box;
 
 body{
     background: #52154E;
+    background-image: url('https://live.staticflickr.com/65535/54904435779_82610c8623_b.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -13,7 +17,7 @@ body{
     
 }
 .app{
-    background: #DAE0F2;
+    background: #4874ad;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -23,9 +27,9 @@ body{
 
 .app h1{
     font-size: 25px;
-    color: #111344;
+    color: #f9f3dc;
     font-weight: 600;
-    border-bottom: 1px solid #111344;
+    border-bottom: 1px solid #7fa0ca;
     padding-bottom: 30px;
 }
 .quiz{
@@ -33,14 +37,14 @@ body{
 }
 .quiz h2{
     font-size: 18px;
-    color:#111344;
+    color:#f9f3dc;
     font-weight: 600;
     padding-bottom: 15px;
 }
 .btn{
-    background: #392061;
-    color: #EFE9E7;
-    font-weight: 500;
+    background: #ebd684;
+    color: #373c43;
+    font-weight: 650;
     width: 100%;
     border: 1px solid #EFE9E7;
     padding: 15px;
@@ -51,16 +55,17 @@ body{
     transition: all 0.4s;
 }
 .btn:hover:not([disabled]){
-    background: #52154E;
+    background: #7fa0ca;
     color: #EFE9E7;
 }
 .btn:disabled{
     cursor: default;
 }
 #next-btn{
-    background: #111344;
+    background: #7fa0ca;
     color: #EFE9E7;
     font-weight: 750;
+    font-size: 16px;
     width: 100px;
     border: 0;
     padding: 10px;
@@ -71,13 +76,13 @@ body{
     transition: all 0.4s;
 }
 #next-btn:hover{
-    background: #52154E;
-    color: #F9CFF2;
+    background: #896939;
 }
 .correct{
     background: #78bb57;
-    color:#000000
+    color:#373c43
 }
 .incorrect{
-    background: #880808
+    background: #373c43;
+    color: #f9f3dc;
 }
