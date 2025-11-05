@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 body{
-    background: #111344;
+    background: #52154E;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -17,13 +17,13 @@ body{
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
-    
 }
+
 .app h1{
     font-size: 25px;
-    color: #52154E;
+    color: #111344;
     font-weight: 600;
     border-bottom: 1px solid #111344;
     padding-bottom: 30px;
@@ -38,7 +38,7 @@ body{
     padding-bottom: 15px;
 }
 .btn{
-    background: #607b3b;
+    background: #392061;
     color: #EFE9E7;
     font-weight: 500;
     width: 100%;
@@ -46,16 +46,19 @@ body{
     padding: 15px;
     margin: 10px 10px;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
     transition: all 0.4s;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #52154E;
     color: #EFE9E7;
 }
+.btn:disabled{
+    cursor: default;
+}
 #next-btn{
-    background: #72B01D;
+    background: #111344;
     color: #EFE9E7;
     font-weight: 750;
     width: 100px;
@@ -65,10 +68,16 @@ body{
     border-radius: 4px;
     cursor: pointer;
     display: none;
-    
     transition: all 0.4s;
 }
 #next-btn:hover{
     background: #52154E;
     color: #F9CFF2;
+}
+.correct{
+    background: #78bb57;
+    color:#000000
+}
+.incorrect{
+    background: #880808
 }
