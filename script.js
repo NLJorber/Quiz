@@ -1,3 +1,19 @@
+const startBtn = document.querySelector(".start-btn");
+const app = document.querySelector(".app");
+const exitBtn = document.querySelector(".exit-btn");
+const homeSection = document.querySelector(".home");
+
+startBtn.onclick = () => {
+    app.classList.add("active");
+    homeSection.style.display = "none";
+}
+
+exitBtn.onclick = () => {
+    app.classList.remove("active");
+    homeSection.style.display = "flex";
+    startQuiz();
+}
+
 const questions = [
     {
         question: "Where is Loki from?",
@@ -57,6 +73,7 @@ function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    exitBtn.style.display = "none";
     showQuestion();
 }
 
@@ -108,7 +125,22 @@ function showScore(){
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    exitBtn.style.display = "block";
+    
+    showPopup();
 }
+
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("close-popup");
+
+function showPopup() {
+    popup.style.display = "flex";
+}
+
+closePopup.onclick = () => {
+    popup.style.display = "none";
+}
+
 
 function handleNextButton(){
     currentQuestionIndex++;
@@ -119,7 +151,6 @@ function handleNextButton(){
     }
 }
 
-
 nextButton.addEventListener("click", ()=>{
     if(currentQuestionIndex < questions.length){
         handleNextButton();
@@ -127,5 +158,7 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 })
+
+
 
 startQuiz();
