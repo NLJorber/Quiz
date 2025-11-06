@@ -1,3 +1,5 @@
+
+
 *{
 margin: 0;
 padding: 0;
@@ -6,7 +8,7 @@ box-sizing: border-box;
 
 body{
     background: #52154E;
-    background-image: url('https://live.staticflickr.com/65535/54904435779_82610c8623_b.jpg');
+    background-image: linear-gradient(rgba(28, 28, 28, 0.263), rgba(187, 187, 187, 0.5)),url('https://live.staticflickr.com/65535/54904435779_82610c8623_b.jpg'); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,13 +18,87 @@ body{
     font-style: normal;
     
 }
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background:#4874ad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.title {
+    font-size: 30px;
+    color:#e9a069;
+    text-decoration: none;
+    font-weight: 650;
+    text-align: left;
+    filter: drop-shadow(0 0 5px #373c43);
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content h1 {
+    font-size: 78px;
+    font-weight: 700;
+    color:#f9f3dc;
+    filter: drop-shadow(0 0 5px #373c43);
+}
+
+.home-content p {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    color:#f9f3dc;
+    filter: drop-shadow(0 0 5px #373c43);
+}
+
+.start-btn {
+    background: #4874ad;
+    color: #EFE9E7;
+    font-weight: 750;
+    font-size: 16px;
+    width: 100px;
+    border: 1.5px solid #EFE9E7;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 13px;
+    cursor: pointer;
+    display: center;
+    transition: all 0.4s;
+}
+
+.start-btn:hover {
+    background: #ebd684;
+    color: #373c43;
+}
+
 .app{
     background: #4874ad;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 160px auto 0;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .app h1{
@@ -30,13 +106,14 @@ body{
     color: #f9f3dc;
     font-weight: 600;
     border-bottom: 1px solid #7fa0ca;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 7px;
 }
 .quiz{
     padding: 20px 0;
 }
 .quiz h2{
-    font-size: 18px;
+    font-size: 19px;
     color:#f9f3dc;
     font-weight: 600;
     padding-bottom: 15px;
@@ -44,13 +121,14 @@ body{
 .btn{
     background: #ebd684;
     color: #373c43;
-    font-weight: 650;
-    width: 100%;
-    border: 1px solid #EFE9E7;
-    padding: 15px;
-    margin: 10px 10px;
+    font-size: 14px;
+    font-weight: 690;
+    width: 96%;
+    border: 3px solid #EFE9E7;
+    padding: 20px;
+    margin: 6px 10px;
     text-align: left;
-    border-radius: 7px;
+    border-radius: 13px;
     cursor: pointer;
     transition: all 0.4s;
 }
@@ -67,16 +145,17 @@ body{
     font-weight: 750;
     font-size: 16px;
     width: 100px;
-    border: 0;
+    border: 1.5px solid #EFE9E7;
     padding: 10px;
     margin: 20px auto 0;
-    border-radius: 4px;
+    border-radius: 13px;
     cursor: pointer;
     display: none;
     transition: all 0.4s;
 }
 #next-btn:hover{
-    background: #896939;
+    background: #ebd684;
+    color: #373c43;
 }
 .correct{
     background: #78bb57;
