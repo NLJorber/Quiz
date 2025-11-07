@@ -50,6 +50,7 @@ body{
     font-weight: 650;
     text-align: left;
     filter: drop-shadow(0 0 5px #373c43);
+    pointer-events: none; 
 }
 
 .home {
