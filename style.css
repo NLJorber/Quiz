@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 body{
     background: #52154E;
-    background-image: linear-gradient(rgba(28, 28, 28, 0.263), rgba(187, 187, 187, 0.5)),url('https://live.staticflickr.com/65535/54904435779_82610c8623_b.jpg'); 
+    background-image: linear-gradient(rgba(195, 182, 182, 0.5), rgba(49, 44, 44, 0.6)),url('https://live.staticflickr.com/65535/54904435779_82610c8623_b.jpg'); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -14,7 +14,6 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
 }
 
 .header {
@@ -28,7 +27,6 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
 
 .logo {
@@ -61,11 +59,11 @@ body{
     justify-content: center; 
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 900px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -77,6 +75,15 @@ body{
     font-weight: 700;
     color:#f9f3dc;
     filter: drop-shadow(0 0 5px #373c43);
+    padding-top: 150px;
+}
+
+.home-content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color:#f9f3dc;
+    filter: drop-shadow(50px 50px 50px #00060d);
+    padding: 20px 15px;
 }
 
 .home-content p {
@@ -138,15 +145,18 @@ body{
     padding-top: 10px;
     padding-bottom: 7px;
 }
+
 .quiz{
     padding: 20px 0;
 }
+
 .quiz h2{
     font-size: 19px;
     color:#f9f3dc;
     font-weight: 600;
     padding-bottom: 15px;
 }
+
 .btn{
     background: #ebd684;
     color: #373c43;
@@ -161,13 +171,16 @@ body{
     cursor: pointer;
     transition: all 0.4s;
 }
+
 .btn:hover:not([disabled]){
     background: #7fa0ca;
     color: #EFE9E7;
 }
+
 .btn:disabled{
     cursor: default;
 }
+
 #next-btn{
     display: none;
     background: #7fa0ca;
@@ -182,6 +195,7 @@ body{
     cursor: pointer;
     transition: all 0.4s;
 }
+
 #next-btn:hover{
     background: #ebd684;
     color: #373c43;
@@ -196,7 +210,7 @@ body{
     width: 100px;
     border: 1.5px solid #EFE9E7;
     padding: 10px;
-    margin: 20px auto 0;
+    margin: auto;
     border-radius: 13px;
     cursor: pointer;
     transition: all 0.4s;
@@ -277,7 +291,7 @@ body{
 }
 
 .correct{
-    background: #78bb57;
+    background: #96df72;
     color:#373c43
 }
 .incorrect{
